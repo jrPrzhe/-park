@@ -1,0 +1,55 @@
+.navigation {
+  display: flex;
+  justify-content: space-around;  /* Расположение элементов меню */
+  position: fixed;  /* Меню фиксируется */
+  bottom: 2%;  /* Поднимаем меню на 2% от низа */
+  left: 50%;  /* Сдвигаем меню к центру */
+  transform: translateX(-50%);  /* Центрируем меню относительно его ширины */
+  width: 70%;  /* Ширина меню */
+  background: #f3f3f3;
+  padding: 10px 0;  /* Уменьшаем паддинг для улучшения внешнего вида */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 999;  /* Меню всегда сверху */
+  border-radius: 25px;
+  align-items: center;  /* Центрируем элементы по вертикали */
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  padding: 15px 30px;  /* Паддинг для кнопок */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation a.active {
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  padding: 15px 30px;
+}
+
+.navigation svg {
+  width: 32px;  /* Размер SVG */
+  height: 32px;
+  fill: #007bff;  /* Цвет SVG */
+  transition: fill 0.3s ease;  /* Плавный переход цвета */
+}
+
+.navigation a.active svg {
+  fill: #fff;  /* Белый цвет для SVG при активной кнопке */
+}
+
+/* Медиазапрос для мобильных устройств */
+@media (max-width: 767px) {
+  .navigation svg {
+    width: 24px;  /* Уменьшаем размер иконок на мобильных */
+    height: 24px;
+  }
+
+  .navigation a {
+    padding: 10px 20px;  /* Уменьшаем паддинг для мобильной версии */
+  }
+}

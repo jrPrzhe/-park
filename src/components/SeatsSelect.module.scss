@@ -1,0 +1,17 @@
+.SeatsSelect {
+display: grid;
+}
+
+.place{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    --gap: 16px;
+}
+.rows{
+    display: grid;
+
+
+}
+.seats{
+grid-template-columns: repeat(9,1fr);
+}

@@ -1,0 +1,66 @@
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #f8f9fa;
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: #007bff;
+  }
+
+
+  .city-selector-icon {
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    cursor: pointer;
+    z-index: 1000;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .city-selector {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 17px 15px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+  
+  .city-selector select {
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 16px;
+  }
+  
+  .city-selector select:focus {
+    outline: none;
+    border-color: #0056b3;
+  }
+  
+  .city-selector select option {
+    color: #007bff;
+  }
+  
+  
+  /* Медиазапрос для мобильных устройств */
+  @media (max-width: 767px) {
+    .city-selector select {
+      padding: 8px 20px;  /* Уменьшаем паддинг для мобильной версии */
+    }
+  }
+  
